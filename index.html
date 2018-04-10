@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Solve Ninja</title>
+
+    <!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+    crossorigin=""></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="./assets/logo.PNG" width="auto" height="40" alt=""></a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#personas">Personas</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#calculator">Calculator</a>
+                </li>
+                <li class="nav-item dropdown navbar-dark ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown bg-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Solve
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#report">Report</a>
+                          <a class="dropdown-item" href="#campaign">Campaign</a>
+                          <!-- <div class="dropdown-divider"></div> -->
+                          <a class="dropdown-item" href="#solve">Solutions</a>
+                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ppsi">Public Problem Solving Index</a>
+                </li>
+              </ul>
+              <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+            </div>
+          </nav>
+
+  </head>
+  <body>
+
+        <div class="container">
+
+            <div id="#about">
+                <img src="./assets/solveninjas.jpg">
+                <h2>A Solve Ninja</h2>
+                <p>is anyone who solves public problems, especially in the area of Civic-Environmental issues. It could be at School, Home or Community. There are about 20,000 Solve Ninjas so far, who have saved 
+                    32 Million litres of water, diverted 400 Tons of waste, made 300+ Schools open defecation free for boys. Click on the Calculator to see which Solve Ninja you are!</p>
+                <span><button type="button" class="btn btn-success btn-lg">20,000 Solve Ninjas</button>
+                    <button type="button" class="btn btn-primary btn-lg">32 Mill Liters Water</button>
+                    <button type="button" class="btn btn-secondary btn-lg">400 Tons of Waste</button>
+                    <button type="button" class="btn btn-danger btn-lg">300 Schools Open Defecation free</button>
+                </span>
+            </div>
+            <hr/>    
+            <div id="personas">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>    
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img class="d-block w-100" src="./assets/CampaignChamellion.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-block w-100" src="./assets/HandsonHippo.png" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img class="d-block w-100" src="./assets/Technotiger.png" alt="Third slide">
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="false" style="color:black"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                            </div>
+                    </div>
+            </div>
+            <hr/>
+            <div class = "container" id="calculator">
+                    <div class="row">
+                        <div class="col-lrg">
+                                <h2>Fill your data here</h2>
+                                <form>
+                                        <div class="form-group">
+                                          <label for="username">Name</label>
+                                          <input type="text" class="form-control" id="username" aria-describedby="name" placeholder="Enter Name">
+                                          <!-- <small id="name" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="report_added">Added a Report</label>
+                                                <select class="form-control" id="report_added">
+                                                  <option>1</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                                  <option>5</option>
+                                                </select>
+                                        </div>
+                                        <div class="form-group">
+                                                    <label for="report_share">Report Shared</label>
+                                                    <select class="form-control" id="report_share">
+                                                      <option>1</option>
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                      <option>5</option>
+                                                    </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" onclick="document.getElementById">Submit</button>
+                                </form>
+                        </div>    
+                        <div class="col-sm" id="showPersona">
+                            <h2>Your Solve Ninja Persona</h2>
+                            <p id="username">Test Text</p>
+                        </div>
+                    </div>
+            </div>
+            <hr>
+            <div class = "container" id="report">
+                <br />
+                <h2>Add a report here</h2>
+                <p id="map" style="width: 100%; height: 600px;"></p>
+            </div>
+        </div> 
+
+        
+        <script type="text/javascript">
+
+            // var map = new google.maps.Map(document.getElementById('map'), {
+            //   zoom: 10,
+            //   center: new google.maps.LatLng(45.8167, 15.9833),
+            //   mapTypeId: google.maps.MapTypeId.ROADMAP
+            // });
+      
+            // var infowindow = new google.maps.InfoWindow();
+      
+            // var marker = new google.maps.Marker({
+            //   position: new google.maps.LatLng(45.8167, 15.9833),
+            //   map: map
+            // });
+      
+            // google.maps.event.addListener(marker, 'click', (function(marker) {
+            //   return function() {
+            //     infowindow.setContent("Zagreb");
+            //     infowindow.open(map, marker);
+            //   }
+            // })(marker));
+
+                // var mymap = L.map('map').setView([51.505, -0.09], 13);
+                
+                var map = L.map('map').fitWorld();
+
+                L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                    maxZoom: 18,
+                    id: 'mapbox.streets',
+                    accessToken: 'pk.eyJ1IjoiZ3RtcHJrc2hyYiIsImEiOiJjamZ0bXBqZnMxd3E5MnduejVjdGpuN2R4In0.vvrRpEdZWNwaKUO6vmgRHw'
+                }).addTo(map);
+                // var popup = L.popup();
+                
+                map.locate({setView: true, maxZoom: 16});
+
+                function onLocationFound(e) {
+                    var radius = e.accuracy / 2;
+                    L.marker(e.latlng).addTo(map)
+                    .bindPopup("You are within " + radius + " meters from this point").openPopup();
+                    L.circle(e.latlng, radius).addTo(map);
+                }
+
+                map.on('locationfound', onLocationFound);
+
+                function onLocationError(e) {
+                    alert(e.message);
+                    }
+
+                map.on('locationerror', onLocationError);
+
+                // function onMapClick(e) {
+                // popup
+                //     .setLatLng(e.latlng)
+                //     .setContent("You clicked the map at " + e.latlng.toString())
+                //     .openOn(map);
+                // }
+
+                // map.on('click', onMapClick);
+
+                function showMsg(){
+                    var userInput = document.getElementById('username').value;
+                    console.log(userInput);
+                    document.getElementById('username').innerHTML = userInput;
+                }
+      
+          </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
