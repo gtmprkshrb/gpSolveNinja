@@ -18,7 +18,7 @@
     integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
     crossorigin=""></script>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <a class="navbar-brand" href="#"><img src="./assets/logo.PNG" width="auto" height="40" alt=""></a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,11 +74,12 @@
 
         <div class="container">
 
-            <div id="#about">
+            <div id="#about" style="text-align:center">
                 <img src="./assets/solveninjas.jpg">
                 <h2>A Solve Ninja</h2>
                 <p>is anyone who solves public problems, especially in the area of Civic-Environmental issues. It could be at School, Home or Community. There are about 20,000 Solve Ninjas so far, who have saved 
                     32 Million litres of water, diverted 400 Tons of waste, made 300+ Schools open defecation free for boys. Click on the Calculator to see which Solve Ninja you are!</p>
+                    <blockquote style="text-align:center"><b>The Term Solve Ninja is the property of <a href="http://www.reapbenefit.org">Reap Benefit</a></b></blockquote>
                 <span><button type="button" class="btn btn-success btn-lg">20,000 Solve Ninjas</button>
                     <button type="button" class="btn btn-primary btn-lg">32 Mill Liters Water</button>
                     <button type="button" class="btn btn-secondary btn-lg">400 Tons of Waste</button>
@@ -118,17 +119,17 @@
             <hr/>
             <div class = "container" id="calculator">
                     <div class="row">
-                        <div class="col-lrg">
+                        <div class="col-lg">
                                 <h2>Fill your data here</h2>
                                 <form>
                                         <div class="form-group">
                                           <label for="username">Name</label>
-                                          <input type="text" class="form-control" id="username" aria-describedby="name" placeholder="Enter Name">
+                                          <input type="text" class="form-control form-control-sm" id="username" aria-describedby="name" placeholder="Enter Name">
                                           <!-- <small id="name" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                         </div>
                                         <div class="form-group">
                                                 <label for="report_added">Added a Report</label>
-                                                <select class="form-control" id="report_added">
+                                                <select class="form-control form-control-sm" id="report_added">
                                                   <option>1</option>
                                                   <option>2</option>
                                                   <option>3</option>
@@ -138,7 +139,7 @@
                                         </div>
                                         <div class="form-group">
                                                     <label for="report_share">Report Shared</label>
-                                                    <select class="form-control" id="report_share">
+                                                    <select class="form-control form-control-sm" id="report_share">
                                                       <option>1</option>
                                                       <option>2</option>
                                                       <option>3</option>
@@ -146,7 +147,7 @@
                                                       <option>5</option>
                                                     </select>
                                         </div>
-                                        <button type="submit" class="btn btn-primary" onclick="document.getElementById">Submit</button>
+                                        <button type="submit" class="btn btn-primary" id="calculator">Submit</button>
                                 </form>
                         </div>    
                         <div class="col-sm" id="showPersona">
@@ -224,10 +225,13 @@
 
                 // map.on('click', onMapClick);
 
-                function showMsg(){
-                    var userInput = document.getElementById('username').value;
-                    console.log(userInput);
-                    document.getElementById('username').innerHTML = userInput;
+                document.getElementById("calculator").onclick = function(){
+                  alert("button clicked");
+                    var username = document.getElementById("username");
+                    var report_added = document.getElementById("report_added");
+                    var report_shared = document.getElementById("report_shared");
+                    console.log("User: " + username + "Reports Added: " + report_added + "Reports Shared" + report_shared);
+                  
                 }
       
           </script>
